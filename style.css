@@ -4,3 +4,47 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 100px;
 }
+
+.submit-area {
+  margin-top: 60px;
+  padding: 60px;
+  box-shadow: 5px 5px 10px gray;
+  border-radius: 10px;
+}
+
+#transaction-area {
+  display: block;
+}
+
+.deposit {
+  background: tomato;
+}
+
+.withdraw {
+  background: yellowgreen;
+}
+
+.balance {
+  background: hotpink;
+}
+
+.common-style {
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+.taka {
+  font-size: 50px;
+}
+
+.withdraw-input,
+.deposit-input {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px gray;
+  padding: 40px;
+}
+
+.balance-input-area {
+  margin-top: 40px;
+}
