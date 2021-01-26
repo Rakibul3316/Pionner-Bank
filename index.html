@@ -43,7 +43,7 @@
           <div class="col-md-4">
             <div class="withdraw common-style">
               <h5>Withdraw</h5>
-              <h2 class="taka">$ 00</h2>
+              <h2 class="taka">$ <span id="currentWithdraw">00</span></h2>
             </div>
           </div>
 
@@ -75,11 +75,12 @@
             <div class="withdraw-input">
               <h3>Withdraw</h3>
               <input
+                id="withdrawAmount"
                 type="text"
                 class="form-control mb-3"
                 placeholder="$ amount you want to withdraw."
               />
-              <button class="btn btn-success">Withdraw</button>
+              <button id="addWithdraw" class="btn btn-success">Withdraw</button>
             </div>
           </div>
         </div>

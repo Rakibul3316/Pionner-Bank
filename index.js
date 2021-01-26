@@ -4,7 +4,7 @@ loginBtn.addEventListener("click", function () {
   loginArea.style.display = "none";
 
   const transactionArea = document.getElementById("transaction-area");
-  transactionArea.style.display = "";
+  transactionArea.style.display = "block";
 });
 
 // Deposit button event handler
@@ -18,6 +18,19 @@ depositBtn.addEventListener("click", function () {
   updateSpanText("currentBalance", depositNumber);
 
   document.getElementById("depositAmount").value = "";
+});
+
+// Withdraw Button event handler
+
+const withdrawBtn = document.getElementById("addWithdraw");
+withdrawBtn.addEventListener("click", function () {
+  const withdrawAmount = document.getElementById("withdrawAmount").value;
+  const withdrawNumber = parseFloat(withdrawAmount);
+
+  updateSpanText("currentWithdraw", withdrawNumber);
+  updateSpanText("currentBalance", -1 * withdrawNumber);
+
+  document.getElementById("withdrawAmount").value = "";
 });
 
 function updateSpanText(id, depositNumber) {
